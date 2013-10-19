@@ -84,7 +84,7 @@ public class FrameStore extends JavaPlugin {
 
             try {
                 FileOutputStream fos;
-                URL website = new URL("http://maciekmm.tk/framestore/ver.txt");
+                URL website = new URL("http://dev.bukkit.org/paste/8712.txt");
                 ReadableByteChannel rbc = Channels.newChannel(website.openStream());
                 fos = new FileOutputStream(ShopListeners.frameshop.getDataFolder() + File.separator + "ver.txt");
                 fos.getChannel().transferFrom(rbc, 0, 1 << 24);
