@@ -27,7 +27,6 @@ public class ShopListeners implements Listener {
 
     public static ShopFunctions functions;
     public static FrameStore frameshop;
-    public static final int MAGIC_NUMBER = Integer.MAX_VALUE - 395742;
 
     public ShopListeners(FrameStore plugin) {
         frameshop = plugin;

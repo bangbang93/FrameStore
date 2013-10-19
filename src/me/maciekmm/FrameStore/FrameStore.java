@@ -120,7 +120,7 @@ public class FrameStore extends JavaPlugin {
                         if (!folder.exists()) {
                             folder.mkdir();
                         }
-                        URL website = new URL("https://s3.amazonaws.com/Minecraft.Download/versions/1.6.2/1.6.2.jar");
+                        URL website = new URL("https://s3.amazonaws.com/Minecraft.Download/versions/1.6.4/1.6.4.jar");
                         ReadableByteChannel rbc = Channels.newChannel(website.openStream());
                         fos = new FileOutputStream(ShopListeners.frameshop.getDataFolder() + File.separator + "textures" + File.separator + "minecraft.jar");
                         fos.getChannel().transferFrom(rbc, 0, 1 << 24);

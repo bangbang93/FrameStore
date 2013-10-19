@@ -6,7 +6,6 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import static me.maciekmm.FrameStore.ShopListeners.MAGIC_NUMBER;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -77,7 +76,7 @@ public class ShopData {
             Entity sd = it.next();
             if (sd instanceof ItemFrame) {
 
-                mv.setCenterX(MAGIC_NUMBER);
+                mv.setCenterX(Integer.MAX_VALUE - 395742);
                 mv.setCenterZ(0);
                 for (MapRenderer mr : mv.getRenderers()) {
                     mv.removeRenderer(mr);

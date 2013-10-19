@@ -32,10 +32,12 @@ public class ShopFunctions {
             while (rs.next()) {
                 shopl.put(Serializer.unserializeLoc(rs.getString("loc")), new ShopData(rs.getString("loc")));
             }
+            rs.close();
         } catch (SQLException e) {
-            FrameStore.log.severe("[Mysql-EcoCraft] Error while fetching shops!");
+            FrameStore.log.severe("[Mysql-FrameStore] Error while fetching shops!");
 
         }
+        
     }
 
     public void loadMaps(FrameStore pl) {
