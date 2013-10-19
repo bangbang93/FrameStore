@@ -1,6 +1,6 @@
 name: FrameStore
 main: me.maciekmm.FrameStore.FrameStore
-version: PR1.4.1
+version: PR1.4.2
 website: http://maciekmm.tk
 author: maciekmm
 depend: [Vault]
