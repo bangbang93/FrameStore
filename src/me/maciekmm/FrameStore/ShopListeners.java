@@ -320,9 +320,9 @@ public class ShopListeners implements Listener {
 
     @EventHandler
     public void onPlayerSpawn(final PlayerJoinEvent e) { //Post Login Event, when sending maps in login event player(entity) was not spawned
-        if ((e.getPlayer().hasPermission("framestore.admin")||e.getPlayer().isOp()) && FrameStore.update == true) {
+       /* if ((e.getPlayer().hasPermission("framestore.admin")||e.getPlayer().isOp()) && FrameStore.update == true) {
             e.getPlayer().sendMessage(ChatColor.DARK_RED + "New update of framestore is available, check http://dev.bukkit.org/server-mods/framestore/");
-        }
+        }*/
     }
 
     @EventHandler

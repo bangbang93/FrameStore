@@ -38,7 +38,7 @@ public class FrameStore extends JavaPlugin {
     public static String type;
     private List<String> lores = new ArrayList<>();
     private ItemStack is;
-    public static boolean update = false;
+    //public static boolean update = false;
     public static boolean debug = false;
 
     @Override
@@ -80,7 +80,7 @@ public class FrameStore extends JavaPlugin {
                 ShopListeners.functions.dumpToDatabase();
             }
         }, delay, savePeriod);
-        if (this.getConfig().getBoolean("updatenotifications")) {
+        /*if (this.getConfig().getBoolean("updatenotifications")) {
 
             try {
                 FileOutputStream fos;
@@ -108,7 +108,7 @@ public class FrameStore extends JavaPlugin {
             }
 
 
-        }
+        } DUE to bukkit policy not available in R3 1.6.4*/
         if (!new File(this.getDataFolder() + File.separator + "textures" + File.separator + "minecraft.jar").exists() && this.getConfig().getBoolean("downloadimages")) {
             this.getServer().getScheduler().runTaskAsynchronously(this, new Runnable() {
                 @Override
